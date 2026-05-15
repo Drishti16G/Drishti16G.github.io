@@ -2,7 +2,7 @@
 title: "GES668: Mapping Baltimore 311 Service Requests and Median Household Income"
 author: "Drishti Gandhi"
 execute: 
-  cache: true
+  cache: false
   warning: false
   message: false
   
@@ -109,7 +109,7 @@ As this function requires processing thousands of variables from the Census Bure
 ```{r}
 #| include: true
 
-dataset_list <- load_variables(year=2022, "acs5", cache = TRUE)
+dataset_list <- load_variables(year=2022, "acs5", cache = FALSE)
 
 #View(dataset_list)
 
