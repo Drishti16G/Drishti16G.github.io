@@ -2,3 +2,12 @@
 .Rhistory
 .RData
 .Ruserdata
+
+.quarto/**
+.quarto/
+
+**/*.quarto_ipynb
+
+**/index_cache
+**/index_files
+**/_site
