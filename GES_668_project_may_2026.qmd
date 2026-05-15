@@ -190,8 +190,7 @@ balt_311 <- service_311 |>
 
 The ACS data fetched initially was in long format, where each Census tract was repeated for each variable, like population and median household income.
 
-Example:
-Note how the `variable` and `estimate` columns contain both population and household income data for the same Census tract.
+Example: Note how the `variable` and `estimate` columns contain both population and household income data for the same Census tract.
 
 ```{r}
 balt_income |> 
@@ -203,8 +202,7 @@ To make the dataset easier to understand, the `pivot_wider()` function from the 
 
 The `select()` function was also used to retain only the relevant fields required for the analysis, like the census tract *GEOID*, variable values, and geometry information.
 
-Example workflow used to reshape the ACS dataset:
-Note here we have 2 separate columns for population and household income.
+Example workflow used to reshape the ACS dataset: Note here we have 2 separate columns for population and household income.
 
 ```{r}
 balt_income_wide <- balt_income %>%
@@ -214,7 +212,6 @@ balt_income_wide <- balt_income %>%
 head(balt_income_wide, 5)
 
 ```
-
 
 ## Spatial Data Processing
 
@@ -236,7 +233,7 @@ st_crs(balt_311)
 ::: {.note-epsg style="background-color: light-gray; padding: 15px; border: 1px solid #cccccc;"}
 Coordinate Reference Systems (CRS) defines how spatial data is referenced and positioned on the Earth’s surface. In this project, the Baltimore 311 data and ACS census tract data originally used different coordinate reference systems. So they have to be transformed before a spatial join.
 
-Here `balt_311` i.e the open Baltimore data set is WSG84 (CRS) and `balt_income_wide` i.e US Census Bureau data is NAD83 (CRS). 
+Here `balt_311` i.e the open Baltimore data set is WSG84 (CRS) and `balt_income_wide` i.e US Census Bureau data is NAD83 (CRS).
 
 WGS84 (World Geodetic System 1984) is a standardized, Earth-centered, 3D coordinate system and datum used as the foundation for modern mapping, GIS, and GPS. It represents locations in form of latitude and longitude coordinates.
 
@@ -274,10 +271,10 @@ The processed spatial data-sets are then visualized using the `ggplot2` and `sf`
 
 ### Median Household Income Map
 
-This map shows the spatial distribution of income in Baltimore City census tracts. The income estimates are from ACS 5-year estimates. 
+This map shows the spatial distribution of income in Baltimore City census tracts. The income estimates are from ACS 5-year estimates.
 
-- Yellow and green shade tracts represent higher median household income levels.
-- Blue shade tracts represent the lower-income areas. 
+-   Yellow and green shade tracts represent higher median household income levels.
+-   Blue shade tracts represent the lower-income areas.
 
 The map helps visually see the income patterns of the city. It is a base map for comparing the 311 service request distributions.
 
@@ -345,7 +342,6 @@ ggsave("Images/pop_map2.png", width = 8, height = 6)
 
 This map shows the spatial distribution of sanitation-related service requests in the city. It highlights **areas with higher concentrations of requests** for SW-Dirty Street and SW-Dirty Alley. It helps identify the clustering patterns of sanitation concerns.
 
-
 ```{r}
 
 balt_map |>
@@ -365,8 +361,6 @@ ggsave("Images/service_req311_map.png", width = 8, height = 6)
 
 ```
 
-   
-
 #### *Analysis*
 
 -   Requests are clustered in central urban tracts.
@@ -375,7 +369,7 @@ ggsave("Images/service_req311_map.png", width = 8, height = 6)
 
 ### Requests and Population Map
 
-This map was created to see whether higher numbers of sanitation-related service requests are from higher populations tracts. 
+This map was created to see whether higher numbers of sanitation-related service requests are from higher populations tracts.
 
 Population was used to provide additional context for the distribution of 311 service requests. However, total population may not be the most accurate variable for comparison because it includes all age groups, while 311 service requests are more likely to be reported by adults.
 
@@ -482,12 +476,9 @@ But the **relationship is not perfectly linear.**
 
 That’s actually a realistic urban data-set pattern.
 
-
 ### Service Response Time by Census Tract
 
 This map shows the average response time for sanitation-related 311 service requests in Baltimore city. The response time was calculated in days using the difference between the request creation date and closure date. Average response time values were aggregated by census tract to examine possible spatial variations in municipal response patterns.
-
-
 
 ```{r}
 balt_map |>
@@ -507,6 +498,7 @@ balt_map |>
 ggsave("Images/SR_Time_map.png", width = 8, height = 6)
 
 ```
+
 #### *Analysis*
 
 The map shows that average service response time in most tracts is between 1 and 3 days. However, a few tracts show higher response times, indicating some spatial variation in how quickly service requests were resolved across the city.
@@ -514,7 +506,6 @@ The map shows that average service response time in most tracts is between 1 and
 Overall variation in response times is not very large, the map shows that service delivery response patterns are not uniform in the city.
 
 The analysis also highlights the importance of handling outliers and inconsistent timestamps when working with publicly available administrative datasets such as 311 service request records.
-
 
 ## Challenges
 
@@ -546,15 +537,13 @@ Another limitation of the analysis is the use of total population as a compariso
 
 This project focuses on exploratory spatial visualization and descriptive analysis. Though spatial associations between service requests and socioeconomic conditions can be seen but the analysis does not establish a definitive causal relationships between median income and sanitation-related complaints.
 
-
 ## Conclusion
-
 
 This project shows how open data can be used to make meaningful observations and analysis. It uses the Baltimore 311 service request data with the ACS median household income and population data. Both data sets here were fetched via an API key which shows how data can be fetched in real time .
 
-All the maps generated had different analysis and patterns. The request map showed that service requests are not distributed evenly in the city. It can be safely said that there is no clear relationship between the median household income and service requests.Some of the city's  rich neighborhoods like the north central region and the areas near the harbor dont have similar request pattern.
+All the maps generated had different analysis and patterns. The request map showed that service requests are not distributed evenly in the city. It can be safely said that there is no clear relationship between the median household income and service requests.Some of the city's rich neighborhoods like the north central region and the areas near the harbor dont have similar request pattern.
 
-While the areas near the harbor are rich neighborhoods and have high requests whereas the north central neighborhoods are also rich neighborhoods but have significantly lower requests as compared to the Baltimore Downtown.  This suggests that additional social, demographic, and urban factors also influence the reporting pattern.
+While the areas near the harbor are rich neighborhoods and have high requests whereas the north central neighborhoods are also rich neighborhoods but have significantly lower requests as compared to the Baltimore Downtown. This suggests that additional social, demographic, and urban factors also influence the reporting pattern.
 
 The project also highlighted the importance of data pre-processing, coordinate system alignment and spatial joins when working with real-world spatial data sets in R.
 
@@ -579,7 +568,3 @@ Overall, the project shows how spatial data sets can be used to understand the r
 8.  [Unequal Responsiveness in City Service Delivery: Evidence from 42 Million 311 Calls](https://doi.org/10.1561/100.00022089)
 
 9.[US Census Bureau Website](https://data.census.gov/)
-
-
-
-
