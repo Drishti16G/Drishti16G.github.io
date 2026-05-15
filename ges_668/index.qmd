@@ -96,13 +96,7 @@ API keys can be obtained from [the US Census Bureau Website](https://api.census.
 
 my_api_key <- Sys.getenv("CENSUS_API_KEY")
 
-if (my_api_key == "") {
-  my_api_key <- "YOUR_KEY_HERE"
-}
-
-if ( my_api_key != "YOUR_KEY_HERE") {
-  census_api_key(my_api_key, install=TRUE, overwrite=TRUE)
-}
+census_api_key(my_api_key, install=FALSE)
 
 ```
 
