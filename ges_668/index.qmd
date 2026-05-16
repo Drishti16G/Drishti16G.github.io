@@ -106,12 +106,12 @@ Searching for Census variables and understanding variable IDs is an important st
 
 As this function requires processing thousands of variables from the Census Bureau which may take a few moments, we can specify `cache = TRUE` in the function call to store the data in the cache directory for future access.
 
-```{r}
+```{r, eval=FALSE}
 #| include: true
 
-dataset_list <- load_variables(year=2022, "acs5", cache = FALSE)
+dataset_list <- load_variables(year=2022, "acs5", cache = TRUE)
 
-#View(dataset_list)
+View(dataset_list)
 
 ```
 
