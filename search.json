@@ -84,11 +84,11 @@
     "text": "10 References\n\nAn introduction to tidycensus\n311 Customer Service Requests 2022\nArcgislayers Package\nMedian Household Income\nAre High-Immigrant Neighborhoods Disadvantaged in Seeking Local Government Services? Evidence from Baltimore City, Maryland\nStructure of 311 service requests as a signature of urban location\nEquity in 311 Reporting: Understanding Socio-Spatial Differentials in the Propensity to Complain\nUnequal Responsiveness in City Service Delivery: Evidence from 42 Million 311 Calls\n\n9.US Census Bureau Website"
   },
   {
-    "objectID": "Remote-sensing-project.html",
-    "href": "Remote-sensing-project.html",
+    "objectID": "Remote-sensing-project.html#abstract",
+    "href": "Remote-sensing-project.html#abstract",
     "title": "Remote Sensing Project",
-    "section": "",
-    "text": "Exploring Change:\nLand Cover Classification of Lake Poyang, China (1988 - 2023)"
+    "section": "Abstract",
+    "text": "Abstract\nPoyang Lake, China’s largest freshwater lake, has experienced major hydrological and environmental changes over the past several decades due to climate variability, seasonal flooding and drought cycles, anthropological activities, and large-scale hydrological modifications such as the operation of the Three Gorges Dam. The lake experiences extreme seasonal fluctuations in water extent.The water coverage expands during wet summer months and shrinks drastically during dry periods. Monitoring these long-term surface water changes is important for understanding ecological change, flood and drought vulnerability, wetland sustainability, and regional water resource management. This project investigates the spatial and temporal changes in the surface water extent of Poyang Lake between 1988 and 2023 using Landsat imagery and remote sensing techniques.Results showed fluctuations in lake extent, with maximum water coverage observed in 2014 and an overall decline of approximately 495 km² between 1988 and 2023.\nPrevious studies have shown that droughts, flooding events, sand mining, sediment changes, and hydrological regulation have altered the lake’s morphology and ecological conditions over time. The findings of this project contribute to a better understanding of long-term lake dynamics and demonstrate the effectiveness of remote sensing techniques for monitoring environmental change in large lake systems."
   },
   {
     "objectID": "index.html",
