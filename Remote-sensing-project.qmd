@@ -1,3 +1,16 @@
 ---
 title: "Remote Sensing Project"
+
+author: "Drishti Gandhi"
+
+format:
+  html:
+    toc: true
+    number-sections: true
+    
 ---
+
+
+**Exploring Change:**
+
+Land Cover Classification of Lake Poyang, China (1988 - 2023)
