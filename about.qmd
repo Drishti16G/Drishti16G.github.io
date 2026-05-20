@@ -1,9 +1,16 @@
 ---
 title: "About"
+about: 
+  template: jolla
+  image: images/image3.png
+  links: 
+    - icon: github
+      text: Github
+      href: https://github.com/Drishti16G
 ---
 
-About this site
+*Graduate Student in GIS*
 
-```{r}
-1 + 1
-```
+[University of Maryland, Baltimore County](https://professionalprograms.umbc.edu/geographic-information-systems/masters-of-professional-studies-geographic-information-systems/)
+
+I'm passionate about spatial analysis, remote sensing, and using maps to understand real-world problems. Currently building projects in GIS, data visualization, and environmental analysis.

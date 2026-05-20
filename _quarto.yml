@@ -4,15 +4,18 @@ project:
 website:
   title: "Drishti Gandhi Portfolio"
   navbar:
+    search: true
     left:
       - href: index.qmd
         text: Home
       - about.qmd
+      - Remote-sensing-project.qmd
+      
 
 format:
   html:
     theme:
-      - cosmo
+      - minty
       - brand
     css: styles.css
     toc: true
