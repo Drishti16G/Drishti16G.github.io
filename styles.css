@@ -1,1 +1,82 @@
-/* css styles */
+    body {
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+main {
+  max-width: 850px;
+}
+
+.intro {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.intro h1 {
+  color: #8a4f45;
+  letter-spacing: 0.08em;
+  text-transform: lowercase;
+}
+
+h2 {
+  color: #8a4f45;
+  letter-spacing: 0.25em;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 2rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #ddd;
+  align-items: center;
+}
+
+.project h3 {
+  margin-top: 0;
+  font-weight: 500;
+}
+
+.project p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.project code {
+  font-size: 0.7rem;
+  color: #555;
+  background-color: #f3f3f3;
+  padding: 0.15rem 0.3rem;
+  border-radius: 3px;
+}
+
+.project-image img {
+  width: 100%;
+  border-radius: 3px;
+}
+
+.sidebar-box {
+  position: fixed;
+  right: 13%;
+  top: 130px;
+  width: 180px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.sidebar-box h3 {
+  font-size: 0.9rem;
+  margin-top: 1.2rem;
+  color: #333;
+}
+
+@media (max-width: 1000px) {
+  .sidebar-box {
+    display: none;
+  }
+
+  .project {
+    grid-template-columns: 1fr;
+  }
+}

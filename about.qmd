@@ -1,8 +1,8 @@
 ---
-title: "About"
+title: ""
 about: 
   template: jolla
-  image: images/image3.png
+  image: images/ProfilePic/image3.png
   links: 
     - icon: github
       text: Github
@@ -12,5 +12,6 @@ about:
 *Graduate Student in GIS*
 
 [University of Maryland, Baltimore County](https://professionalprograms.umbc.edu/geographic-information-systems/masters-of-professional-studies-geographic-information-systems/)
+
 
 I'm passionate about spatial analysis, remote sensing, and using maps to understand real-world problems. Currently building projects in GIS, data visualization, and environmental analysis.

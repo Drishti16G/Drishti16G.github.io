@@ -1,24 +1,28 @@
+
 project:
   type: website
 
 website:
-  title: "Drishti Gandhi Portfolio"
+  title: "Drishti Gandhi"
   navbar:
-    search: true
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
-      - Remote-sensing-project.qmd
-      
+      - text: "home"
+        href: index.qmd
+      - text: "about drishti"
+        href: about.qmd
+    right:
+      - icon: github
+        href: "https://github.com/Drishti16G/Drishti16G.github.io"
+  search: true
 
 format:
   html:
-    theme:
-      - minty
-      - brand
+    theme: cosmo
     css: styles.css
     toc: true
 
-editor: visual
+execute:
+  freeze: false
+  cache: false
 
+editor: visual

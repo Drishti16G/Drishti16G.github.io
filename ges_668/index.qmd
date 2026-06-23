@@ -561,4 +561,4 @@ Overall, the project shows how spatial data sets can be used to understand the r
 
 8.  [Unequal Responsiveness in City Service Delivery: Evidence from 42 Million 311 Calls](https://doi.org/10.1561/100.00022089)
 
-9.[US Census Bureau Website](https://data.census.gov/)
+9.  [US Census Bureau Website](https://data.census.gov/)
