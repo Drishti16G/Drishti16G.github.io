@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Remote Sensing Project – Drishti Gandhi Portfolio</title>
+<title>Remote Sensing Project – Drishti Gandhi</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -39,10 +39,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f4943edfcd3b274f649cef36d19b3b26.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-bba5ebae505b5c03f3f0d8040a416a6b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Drishti Gandhi Portfolio</span>
+    <span class="navbar-title">Drishti Gandhi</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -94,15 +94,18 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Home</span></a>
+<span class="menu-text">home</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About</span></a>
+<span class="menu-text">about drishti</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="./Remote-sensing-project.html" aria-current="page"> 
-<span class="menu-text">Remote Sensing Project</span></a>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/Drishti16G/Drishti16G.github.io"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -120,10 +123,23 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#research-objective" id="toc-research-objective" class="nav-link active" data-scroll-target="#research-objective">Research Objective :</a></li>
+  <li><a href="#research-objective" id="toc-research-objective" class="nav-link active" data-scroll-target="#research-objective">Research Objective</a></li>
   <li><a href="#abstract" id="toc-abstract" class="nav-link" data-scroll-target="#abstract">Abstract</a></li>
   <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
   <li><a href="#study-area" id="toc-study-area" class="nav-link" data-scroll-target="#study-area">Study Area</a></li>
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a>
+  <ul class="collapse">
+  <li><a href="#satellite-data" id="toc-satellite-data" class="nav-link" data-scroll-target="#satellite-data">Satellite Data</a></li>
+  </ul></li>
+  <li><a href="#software-used" id="toc-software-used" class="nav-link" data-scroll-target="#software-used">Software Used</a></li>
+  <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology">Methodology</a>
+  <ul class="collapse">
+  <li><a href="#image-selection-and-data-preparation" id="toc-image-selection-and-data-preparation" class="nav-link" data-scroll-target="#image-selection-and-data-preparation"><strong>Image Selection and Data Preparation</strong></a></li>
+  <li><a href="#emissivity-based-water-extraction" id="toc-emissivity-based-water-extraction" class="nav-link" data-scroll-target="#emissivity-based-water-extraction"><strong>Emissivity-Based Water Extraction</strong></a></li>
+  <li><a href="#ndwi-and-ndvi-maps" id="toc-ndwi-and-ndvi-maps" class="nav-link" data-scroll-target="#ndwi-and-ndvi-maps"><strong>NDWI and NDVI Maps</strong></a></li>
+  <li><a href="#classification-and-water-area-mapping" id="toc-classification-and-water-area-mapping" class="nav-link" data-scroll-target="#classification-and-water-area-mapping"><strong>Classification and Water Area Mapping</strong></a></li>
+  <li><a href="#why-emissivity-band" id="toc-why-emissivity-band" class="nav-link" data-scroll-target="#why-emissivity-band">Why Emissivity Band?&nbsp;</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -163,7 +179,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 </div>
 <section id="research-objective" class="level3 text-center">
-<h3 class="anchored" data-anchor-id="research-objective">Research Objective :</h3>
+<h3 class="anchored" data-anchor-id="research-objective">Research Objective</h3>
 <p>“To analyze long-term spatial and temporal changes in the surface water extent of Lake Poyang using Landsat Level-2 thermal emissivity data from 1988 to 2023.”</p>
 </section>
 <p><img src="images/images-RS/image5.jpg" class="img-fluid"></p>
@@ -190,8 +206,167 @@ Previous studies have shown that droughts, flooding events, sand mining, sedimen
 <p>Poyang Lake is a seasonal floodplain lake with highly dynamic hydrological behavior. The lake receives water primarily from five major tributaries: the Ganjiang River, Fuhe River, Xinjiang River, Raohe River, and Xiuhe River. These rivers discharge into the lake before the water eventually flows northward into the Yangtze River near Hukou County. The interaction between tributary inflow and the Yangtze River creates complex seasonal fluctuations in water level and surface area.</p>
 <p>The surface area of Poyang Lake varies seasonally from less than 1,000 km² during dry periods to more than 3,000 km² during flood seasons. It has a subtropical humid monsoon climate which is hot, humid in summers and mild cold in winters. Annual precipitation generally ranges between 1350 mm and 2150 mm, with most rainfall between April and June during the East Asian monsoon season. Average annual temperatures are approximately 17–18°C. Seasonal rainfall and monsoon patterns strongly influence the hydrology of the lake, as a result of which the lake expands during wet periods and shrinks during the dry season.</p>
 <p>The lake is internationally recognized for its ecological importance and is designated as a wetland of global significance under the Ramsar Convention. It supports biodiversity conservation, fisheries, agriculture, transportation, and freshwater supply for surrounding communities. The unique hydrological behavior, ecological importance, and increasing environmental stress make Poyang Lake an important study area for long-term remote sensing analysis and environmental monitoring.</p>
+</section>
+<section id="data" class="level2">
+<h2 class="anchored" data-anchor-id="data">Data</h2>
+<section id="satellite-data" class="level3">
+<h3 class="anchored" data-anchor-id="satellite-data">Satellite Data</h3>
+<p>This study uses Landsat imagery to analyze long-term changes in the surface water extent of Poyang Lake between 1988 and 2023. Landsat imagery was selected because of its long historical archive, moderate spatial resolution, and suitability for environmental monitoring and land cover analysis. All images were acquired as Landsat Level-2 products and were selected from similar seasonal periods to maintain consistency in hydrological conditions across years. The primary datasets used in this study included emissivity (EMIS) bands for water extraction and additional spectral indices such as NDWI and NDVI for visualization and interpretation of water and vegetation patterns.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Year</strong></th>
+<th><strong>Satellite</strong></th>
+<th><strong>Sensor</strong></th>
+<th><strong>Spatial Resolution</strong></th>
+<th><strong>Acquisition Month</strong></th>
+<th><strong>Data Used</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1988</strong></td>
+<td>Landsat 5</td>
+<td>TM</td>
+<td>30 m</td>
+<td>Nov</td>
+<td>EMIS</td>
+</tr>
+<tr class="even">
+<td><strong>1996</strong></td>
+<td>Landsat 5</td>
+<td>TM</td>
+<td>30 m</td>
+<td>Nov</td>
+<td>EMIS</td>
+</tr>
+<tr class="odd">
+<td><strong>2005</strong></td>
+<td>Landsat 5</td>
+<td>TM</td>
+<td>30 m</td>
+<td>Oct</td>
+<td>EMIS</td>
+</tr>
+<tr class="even">
+<td><strong>2014</strong></td>
+<td>Landsat 8</td>
+<td>OLI/TIRS</td>
+<td>30 m</td>
+<td>Oct</td>
+<td>EMIS</td>
+</tr>
+<tr class="odd">
+<td><strong>2023</strong></td>
+<td>Landsat 9</td>
+<td>OLI-2/TIRS-2</td>
+<td>30 m</td>
+<td>Nov</td>
+<td>EMIS</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="software-used" class="level2">
+<h2 class="anchored" data-anchor-id="software-used">Software Used</h2>
+<p>Several geospatial and remote sensing software platforms were used during data processing, classification, mapping, and analysis.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Software</strong></td>
+<td><strong>Purpose</strong></td>
+</tr>
+<tr class="even">
+<td><strong>ENVI 6.1</strong></td>
+<td>Image processing, NDWI &amp; NDVI maps, emissivity analysis, classification</td>
+</tr>
+<tr class="odd">
+<td><strong>Google Earth</strong></td>
+<td>Validation and visual interpretation</td>
+</tr>
+<tr class="even">
+<td><strong>RStudio</strong></td>
+<td>Statistical graphs and trend visualization</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="methodology" class="level1">
+<h1>Methodology</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/images-RS/image15.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<section id="image-selection-and-data-preparation" class="level2">
+<h2 class="anchored" data-anchor-id="image-selection-and-data-preparation"><strong>Image Selection and Data Preparation</strong></h2>
+<p>Multi-temporal Landsat imagery was selected to analyze long-term changes in the surface water extent of Poyang Lake between 1988 and 2023. Images from 1988, 1996, 2005, 2014, and 2023 were chosen to represent changes over approximately three decades. To maintain <strong>seasonal consistency</strong> and reduce variability caused by short-term hydrological fluctuations, images were selected from <strong>October to December</strong> periods with low cloud cover.</p>
+<p>All imagery used in this study consisted of Landsat Level-2 products. The images were imported in ENVI 6.1 for preprocessing and analysis. A consistent Area of Interest (AOI) covering Poyang Lake was selected and applied to all years using the subset tool. Creating a common subset ensured that the same geographic extent was analyzed across all datasets for direct comparison of water extent.</p>
+</section>
+<section id="emissivity-based-water-extraction" class="level2">
+<h2 class="anchored" data-anchor-id="emissivity-based-water-extraction"><strong>Emissivity-Based Water Extraction</strong></h2>
+<p>The primary method used for water extraction in this study was emissivity-based classification. Emissivity is the efficiency with which a surface emits thermal energy relative to a perfect blackbody. In remote sensing, water surfaces generally exhibit high emissivity values compared to surrounding land surfaces, vegetation, and built-up areas. Because of this distinct thermal behavior, the emissivity band was effective in separating water bodies from non-water regions within the imagery.</p>
+<p>The emissivity (EMIS) band from the Landsat Level-2 datasets was used to identify water surfaces. Water and non-water areas were separated and classified in two classes. Binary classification maps of two classes — water and non-water — were generated for each selected year.</p>
+<p>This approach was selected because the emissivity band provided clear contrast between open water and surrounding land cover, particularly in wetland and floodplain environments where spectral confusion can occur using visible bands alone.</p>
+</section>
+<section id="ndwi-and-ndvi-maps" class="level2">
+<h2 class="anchored" data-anchor-id="ndwi-and-ndvi-maps"><strong>NDWI and NDVI Maps</strong></h2>
+<p>In addition to emissivity-based classification, the Normalized Difference Water Index (NDWI) and Normalized Difference Vegetation Index (NDVI) were generated to confirm the interpretation of water and vegetation patterns.</p>
+<p>The NDWI was used to enhance and visualize water bodies by utilizing differences between green and near-infrared reflectance values. It was calculated using green and near-infrared reflectance values as follows:&nbsp;</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/images-RS/image16.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Areas with positive NDWI values generally represented water surfaces, while negative values corresponded to non-water features such as vegetation and soil.</p>
+<p>The NDVI was generated to highlight vegetation distribution and differentiate vegetated surfaces from water bodies. It was calculated to identify vegetated surfaces using the following relationship:&nbsp;</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/images-RS/image17.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Vegetation areas typically showed positive NDVI values, while water surfaces generally displayed values below zero.</p>
+<p>These indices were primarily used for visualization and interpretation purposes and helped support the classification results.</p>
+</section>
+<section id="classification-and-water-area-mapping" class="level2">
+<h2 class="anchored" data-anchor-id="classification-and-water-area-mapping"><strong>Classification and Water Area Mapping</strong></h2>
+<p>For each selected year, classified maps were generated containing two classes:</p>
+<ul>
+<li><p>Water</p></li>
+<li><p>Non-water</p></li>
+</ul>
+<p>The classification process focused specifically on identifying changes in water extent rather than producing a detailed multi-class land cover map. Threshold values were adjusted based on image characteristics to improve separation between water and surrounding surfaces.</p>
+<p>Following classification, water and non-water pixels were counted for each year. The total water-covered area was calculated by multiplying the number of classified water pixels by the spatial resolution of the imagery. Area values were then converted into square kilometers to allow temporal comparison across years.</p>
+</section>
+<section id="why-emissivity-band" class="level2">
+<h2 class="anchored" data-anchor-id="why-emissivity-band">Why Emissivity Band?&nbsp;</h2>
+<p>Emissivity is a fundamental concept in thermal remote sensing that describes how efficiently a surface emits thermal infrared radiation relative to a perfect blackbody. Emissivity values range between 0 and 1, with values closer to 1 representing highly efficient emitters of thermal energy. Unlike optical remote sensing, which relies on reflected solar radiation, thermal remote sensing measures emitted radiation from surface materials.</p>
+<p>According to Planck’s Law, all objects above absolute zero emit thermal radiation, and emissivity influences the efficiency with which this energy is emitted from natural surfaces. Different materials exhibit distinct emissivity characteristics depending on their surface composition, moisture content, and physical properties.</p>
+<p>Water generally exhibits very high emissivity values in the thermal infrared region, often close to 0.99, compared to surrounding land surfaces such as soil, rocks, and built-up areas. Because water absorbs most incoming radiation and reflects relatively little, it appears thermally very different in emissivity imagery. This property makes emissivity very useful for separating water from non-water surfaces in remote sensing analysis.</p>
+<p>In this study, the Landsat Level-2 emissivity (EMIS) band was used to identify and classify water surfaces in Lake Poyang. The emissivity band provided strong contrast between water and surrounding land cover, which improved the consistency of water extraction across multiple years. This approach was especially useful in the Lake Poyang wetland environment, where shallow water zones, flooded vegetation, and wet agricultural areas may create spectral confusion in visible-band imagery.</p>
+<p>The emissivity-based approach demonstrated that thermal remote sensing can be an effective method for monitoring long-term hydrological change and surface water dynamics in large freshwater lake systems.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://eo4society.esa.int/wp-content/uploads/2021/04/2017Land_D2T3-P_Cartalis_Thermal.pdf"><img src="images/images-RS/image18.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></a></p>
+</figure>
+</div>
+<p>The figure shows a comparison between optical and thermal remote sensing. It shows reflected solar radiation and emitted thermal infrared energy from Earth’s surface.&nbsp;</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

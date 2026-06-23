@@ -1,8 +1,22 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Drishti Gandhi",
+    "section": "",
+    "text": "GIS student; aspiring geographer; interested in remote sensing, spatial data, spatial statistics, and human geography.\n📍 Baltimore, Maryland"
+  },
+  {
+    "objectID": "index.html#portfolio",
+    "href": "index.html#portfolio",
+    "title": "Drishti Gandhi",
+    "section": "PORTFOLIO",
+    "text": "PORTFOLIO\n\n\nSpatial Databases and Reproducible Mapping in R\nUMBC SPATIAL DATABASES R\nThis project uses R, Quarto, and spatial data workflows to map and analyze Baltimore 311 service requests in relation to community-level patterns.\n\n\n\n\n\n\n\nRemote Sensing Project\nUMBC REMOTE SENSING ENVI\nThis project uses satellite imagery and remote sensing methods to analyze land cover, vegetation, snow, wildfire, and surface temperature patterns.\n\n\n\n\n\n\nOn this page\nPortfolio\n\n\nCategories\nhuman geography\npersonal\nremote sensing\ntransportation\numbc"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "Drishti Gandhi",
     "section": "",
     "text": "Graduate Student in GIS\nUniversity of Maryland, Baltimore County\nI’m passionate about spatial analysis, remote sensing, and using maps to understand real-world problems. Currently building projects in GIS, data visualization, and environmental analysis."
   },
@@ -81,7 +95,7 @@
     "href": "ges_668/index.html#references",
     "title": "GES668: Mapping Baltimore 311 Service Requests and Median Household Income",
     "section": "10 References",
-    "text": "10 References\n\nAn introduction to tidycensus\n311 Customer Service Requests 2022\nArcgislayers Package\nMedian Household Income\nAre High-Immigrant Neighborhoods Disadvantaged in Seeking Local Government Services? Evidence from Baltimore City, Maryland\nStructure of 311 service requests as a signature of urban location\nEquity in 311 Reporting: Understanding Socio-Spatial Differentials in the Propensity to Complain\nUnequal Responsiveness in City Service Delivery: Evidence from 42 Million 311 Calls\n\n9.US Census Bureau Website"
+    "text": "10 References\n\nAn introduction to tidycensus\n311 Customer Service Requests 2022\nArcgislayers Package\nMedian Household Income\nAre High-Immigrant Neighborhoods Disadvantaged in Seeking Local Government Services? Evidence from Baltimore City, Maryland\nStructure of 311 service requests as a signature of urban location\nEquity in 311 Reporting: Understanding Socio-Spatial Differentials in the Propensity to Complain\nUnequal Responsiveness in City Service Delivery: Evidence from 42 Million 311 Calls\nUS Census Bureau Website"
   },
   {
     "objectID": "Remote-sensing-project.html#abstract",
@@ -105,10 +119,52 @@
     "text": "Study Area\nPoyang Lake is located in Jiangxi Province in southeastern China and is the largest freshwater lake in China. The lake lies along the southern bank of the middle reaches of the Yangtze River and forms an important part of the Yangtze River floodplain system. Geographically, Poyang Lake is situated approximately between 28°24′N–29°46′N latitude and 115°49′E–116°46′E longitude. The lake occupies a strategically important hydrological and ecological position within the Yangtze River Basin and serves as a major freshwater storage and flood regulation system in the region.\n\nPoyang Lake is a seasonal floodplain lake with highly dynamic hydrological behavior. The lake receives water primarily from five major tributaries: the Ganjiang River, Fuhe River, Xinjiang River, Raohe River, and Xiuhe River. These rivers discharge into the lake before the water eventually flows northward into the Yangtze River near Hukou County. The interaction between tributary inflow and the Yangtze River creates complex seasonal fluctuations in water level and surface area.\nThe surface area of Poyang Lake varies seasonally from less than 1,000 km² during dry periods to more than 3,000 km² during flood seasons. It has a subtropical humid monsoon climate which is hot, humid in summers and mild cold in winters. Annual precipitation generally ranges between 1350 mm and 2150 mm, with most rainfall between April and June during the East Asian monsoon season. Average annual temperatures are approximately 17–18°C. Seasonal rainfall and monsoon patterns strongly influence the hydrology of the lake, as a result of which the lake expands during wet periods and shrinks during the dry season.\nThe lake is internationally recognized for its ecological importance and is designated as a wetland of global significance under the Ramsar Convention. It supports biodiversity conservation, fisheries, agriculture, transportation, and freshwater supply for surrounding communities. The unique hydrological behavior, ecological importance, and increasing environmental stress make Poyang Lake an important study area for long-term remote sensing analysis and environmental monitoring."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Drishti Gandhi",
-    "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "objectID": "Remote-sensing-project.html#data",
+    "href": "Remote-sensing-project.html#data",
+    "title": "Remote Sensing Project",
+    "section": "Data",
+    "text": "Data\n\nSatellite Data\nThis study uses Landsat imagery to analyze long-term changes in the surface water extent of Poyang Lake between 1988 and 2023. Landsat imagery was selected because of its long historical archive, moderate spatial resolution, and suitability for environmental monitoring and land cover analysis. All images were acquired as Landsat Level-2 products and were selected from similar seasonal periods to maintain consistency in hydrological conditions across years. The primary datasets used in this study included emissivity (EMIS) bands for water extraction and additional spectral indices such as NDWI and NDVI for visualization and interpretation of water and vegetation patterns.\n\n\n\n\n\n\n\n\n\n\n\nYear\nSatellite\nSensor\nSpatial Resolution\nAcquisition Month\nData Used\n\n\n\n\n1988\nLandsat 5\nTM\n30 m\nNov\nEMIS\n\n\n1996\nLandsat 5\nTM\n30 m\nNov\nEMIS\n\n\n2005\nLandsat 5\nTM\n30 m\nOct\nEMIS\n\n\n2014\nLandsat 8\nOLI/TIRS\n30 m\nOct\nEMIS\n\n\n2023\nLandsat 9\nOLI-2/TIRS-2\n30 m\nNov\nEMIS"
+  },
+  {
+    "objectID": "Remote-sensing-project.html#software-used",
+    "href": "Remote-sensing-project.html#software-used",
+    "title": "Remote Sensing Project",
+    "section": "Software Used",
+    "text": "Software Used\nSeveral geospatial and remote sensing software platforms were used during data processing, classification, mapping, and analysis.\n\n\n\n\n\n\n\nSoftware\nPurpose\n\n\nENVI 6.1\nImage processing, NDWI & NDVI maps, emissivity analysis, classification\n\n\nGoogle Earth\nValidation and visual interpretation\n\n\nRStudio\nStatistical graphs and trend visualization"
+  },
+  {
+    "objectID": "Remote-sensing-project.html#image-selection-and-data-preparation",
+    "href": "Remote-sensing-project.html#image-selection-and-data-preparation",
+    "title": "Remote Sensing Project",
+    "section": "Image Selection and Data Preparation",
+    "text": "Image Selection and Data Preparation\nMulti-temporal Landsat imagery was selected to analyze long-term changes in the surface water extent of Poyang Lake between 1988 and 2023. Images from 1988, 1996, 2005, 2014, and 2023 were chosen to represent changes over approximately three decades. To maintain seasonal consistency and reduce variability caused by short-term hydrological fluctuations, images were selected from October to December periods with low cloud cover.\nAll imagery used in this study consisted of Landsat Level-2 products. The images were imported in ENVI 6.1 for preprocessing and analysis. A consistent Area of Interest (AOI) covering Poyang Lake was selected and applied to all years using the subset tool. Creating a common subset ensured that the same geographic extent was analyzed across all datasets for direct comparison of water extent."
+  },
+  {
+    "objectID": "Remote-sensing-project.html#emissivity-based-water-extraction",
+    "href": "Remote-sensing-project.html#emissivity-based-water-extraction",
+    "title": "Remote Sensing Project",
+    "section": "Emissivity-Based Water Extraction",
+    "text": "Emissivity-Based Water Extraction\nThe primary method used for water extraction in this study was emissivity-based classification. Emissivity is the efficiency with which a surface emits thermal energy relative to a perfect blackbody. In remote sensing, water surfaces generally exhibit high emissivity values compared to surrounding land surfaces, vegetation, and built-up areas. Because of this distinct thermal behavior, the emissivity band was effective in separating water bodies from non-water regions within the imagery.\nThe emissivity (EMIS) band from the Landsat Level-2 datasets was used to identify water surfaces. Water and non-water areas were separated and classified in two classes. Binary classification maps of two classes — water and non-water — were generated for each selected year.\nThis approach was selected because the emissivity band provided clear contrast between open water and surrounding land cover, particularly in wetland and floodplain environments where spectral confusion can occur using visible bands alone."
+  },
+  {
+    "objectID": "Remote-sensing-project.html#ndwi-and-ndvi-maps",
+    "href": "Remote-sensing-project.html#ndwi-and-ndvi-maps",
+    "title": "Remote Sensing Project",
+    "section": "NDWI and NDVI Maps",
+    "text": "NDWI and NDVI Maps\nIn addition to emissivity-based classification, the Normalized Difference Water Index (NDWI) and Normalized Difference Vegetation Index (NDVI) were generated to confirm the interpretation of water and vegetation patterns.\nThe NDWI was used to enhance and visualize water bodies by utilizing differences between green and near-infrared reflectance values. It was calculated using green and near-infrared reflectance values as follows: \n\n\n\n\n\nAreas with positive NDWI values generally represented water surfaces, while negative values corresponded to non-water features such as vegetation and soil.\nThe NDVI was generated to highlight vegetation distribution and differentiate vegetated surfaces from water bodies. It was calculated to identify vegetated surfaces using the following relationship: \n\n\n\n\n\nVegetation areas typically showed positive NDVI values, while water surfaces generally displayed values below zero.\nThese indices were primarily used for visualization and interpretation purposes and helped support the classification results."
+  },
+  {
+    "objectID": "Remote-sensing-project.html#classification-and-water-area-mapping",
+    "href": "Remote-sensing-project.html#classification-and-water-area-mapping",
+    "title": "Remote Sensing Project",
+    "section": "Classification and Water Area Mapping",
+    "text": "Classification and Water Area Mapping\nFor each selected year, classified maps were generated containing two classes:\n\nWater\nNon-water\n\nThe classification process focused specifically on identifying changes in water extent rather than producing a detailed multi-class land cover map. Threshold values were adjusted based on image characteristics to improve separation between water and surrounding surfaces.\nFollowing classification, water and non-water pixels were counted for each year. The total water-covered area was calculated by multiplying the number of classified water pixels by the spatial resolution of the imagery. Area values were then converted into square kilometers to allow temporal comparison across years."
+  },
+  {
+    "objectID": "Remote-sensing-project.html#why-emissivity-band",
+    "href": "Remote-sensing-project.html#why-emissivity-band",
+    "title": "Remote Sensing Project",
+    "section": "Why Emissivity Band? ",
+    "text": "Why Emissivity Band? \nEmissivity is a fundamental concept in thermal remote sensing that describes how efficiently a surface emits thermal infrared radiation relative to a perfect blackbody. Emissivity values range between 0 and 1, with values closer to 1 representing highly efficient emitters of thermal energy. Unlike optical remote sensing, which relies on reflected solar radiation, thermal remote sensing measures emitted radiation from surface materials.\nAccording to Planck’s Law, all objects above absolute zero emit thermal radiation, and emissivity influences the efficiency with which this energy is emitted from natural surfaces. Different materials exhibit distinct emissivity characteristics depending on their surface composition, moisture content, and physical properties.\nWater generally exhibits very high emissivity values in the thermal infrared region, often close to 0.99, compared to surrounding land surfaces such as soil, rocks, and built-up areas. Because water absorbs most incoming radiation and reflects relatively little, it appears thermally very different in emissivity imagery. This property makes emissivity very useful for separating water from non-water surfaces in remote sensing analysis.\nIn this study, the Landsat Level-2 emissivity (EMIS) band was used to identify and classify water surfaces in Lake Poyang. The emissivity band provided strong contrast between water and surrounding land cover, which improved the consistency of water extraction across multiple years. This approach was especially useful in the Lake Poyang wetland environment, where shallow water zones, flooded vegetation, and wet agricultural areas may create spectral confusion in visible-band imagery.\nThe emissivity-based approach demonstrated that thermal remote sensing can be an effective method for monitoring long-term hydrological change and surface water dynamics in large freshwater lake systems.\n\n\n\n\n\nThe figure shows a comparison between optical and thermal remote sensing. It shows reflected solar radiation and emitted thermal infrared energy from Earth’s surface."
   }
 ]
