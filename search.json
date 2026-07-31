@@ -1,24 +1,136 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Drishti Gandhi",
+    "objectID": "nyc-lq-flq.html",
+    "href": "nyc-lq-flq.html",
+    "title": "Spatial Analysis of Asian Population Concentration in NYC",
     "section": "",
-    "text": "GIS student; aspiring geographer; interested in remote sensing, spatial data, spatial statistics, and human geography.\n📍 Baltimore, Maryland"
+    "text": "This project examines the geographic concentration of New York City’s Asian population across Census tracts by comparing the traditional Location Quotient (LQ) with the spatially weighted Focal Location Quotient (FLQ). While the LQ measures concentration within individual Census tracts, the FLQ incorporates the influence of nearby tracts using inverse-distance weighting. Comparing the two measures shows how including surrounding geographic context changes the interpretation of population concentration."
   },
   {
-    "objectID": "index.html#portfolio",
-    "href": "index.html#portfolio",
-    "title": "Drishti Gandhi",
-    "section": "PORTFOLIO",
-    "text": "PORTFOLIO\n\n\nSpatial Databases and Reproducible Mapping in R\nUMBC SPATIAL DATABASES R\nThis project uses R, Quarto, and spatial data workflows to map and analyze Baltimore 311 service requests in relation to community-level patterns.\n\n\n\n\n\n\n\nRemote Sensing Project\nUMBC REMOTE SENSING ENVI\nThis project uses satellite imagery and remote sensing methods to analyze land cover, vegetation, snow, wildfire, and surface temperature patterns.\n\n\n\n\n\n\nOn this page\nPortfolio\n\n\nCategories\nhuman geography\npersonal\nremote sensing\ntransportation\numbc"
+    "objectID": "nyc-lq-flq.html#project-overview",
+    "href": "nyc-lq-flq.html#project-overview",
+    "title": "Spatial Analysis of Asian Population Concentration in NYC",
+    "section": "",
+    "text": "This project examines the geographic concentration of New York City’s Asian population across Census tracts by comparing the traditional Location Quotient (LQ) with the spatially weighted Focal Location Quotient (FLQ). While the LQ measures concentration within individual Census tracts, the FLQ incorporates the influence of nearby tracts using inverse-distance weighting. Comparing the two measures shows how including surrounding geographic context changes the interpretation of population concentration."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Drishti Gandhi",
-    "section": "",
-    "text": "Graduate Student in GIS\nUniversity of Maryland, Baltimore County\nI’m passionate about spatial analysis, remote sensing, and using maps to understand real-world problems. Currently building projects in GIS, data visualization, and environmental analysis."
+    "objectID": "nyc-lq-flq.html#research-question",
+    "href": "nyc-lq-flq.html#research-question",
+    "title": "Spatial Analysis of Asian Population Concentration in NYC",
+    "section": "Research Question",
+    "text": "Research Question\nHow does the geographic pattern of Asian population concentration change when neighboring Census tracts are incorporated into the Location Quotient calculation?"
+  },
+  {
+    "objectID": "nyc-lq-flq.html#data-and-methods",
+    "href": "nyc-lq-flq.html#data-and-methods",
+    "title": "Spatial Analysis of Asian Population Concentration in NYC",
+    "section": "Data and Methods",
+    "text": "Data and Methods\nThe analysis used American Community Survey data for New York City Census tracts, including total population and Asian population counts. The traditional Location Quotient was calculated for each tract by comparing its share of the Asian population with the Asian population share of New York City overall.\nTo incorporate surrounding geographic context, tract centroids were created and the 16 nearest neighboring tracts were identified for each focal tract. Inverse-distance weights were applied so that nearby tracts had greater influence than more distant tracts. The weighted population values were then used to calculate the Focal Location Quotient.\n\nLocation Quotient\nA Location Quotient greater than 1 indicates that the Asian population is over-represented in a Census tract compared with the citywide proportion. A value below 1 indicates under-representation.\n\n\nFocal Location Quotient\nThe Focal Location Quotient incorporates the surrounding population pattern rather than evaluating each tract independently. It helps determine whether an individual tract is part of a broader geographic area of concentration."
+  },
+  {
+    "objectID": "nyc-lq-flq.html#comparing-the-lq-and-flq-maps",
+    "href": "nyc-lq-flq.html#comparing-the-lq-and-flq-maps",
+    "title": "Spatial Analysis of Asian Population Concentration in NYC",
+    "section": "Comparing the LQ and FLQ Maps",
+    "text": "Comparing the LQ and FLQ Maps\n\nTraditional Location Quotient\n\n\n\n\n\nThe LQ map shows an uneven pattern of Asian population concentration across New York City. The strongest concentration appears in Queens, where many Census tracts have values above 1 and several fall within the highest LQ classes. Additional concentrations appear in western and southwestern Brooklyn, while much of the Bronx and Staten Island has lower values.\n\n\nFocal Location Quotient\n\n\n\n\n\nThe FLQ map preserves the same broad geographic pattern but produces a smoother and more spatially continuous result. Queens remains the strongest concentration area, while the pattern in Brooklyn also becomes more generalized. This indicates that many high-concentration tracts are reinforced by similar values in nearby Census tracts rather than occurring as isolated locations.\n\n\nMain Comparison\nThe LQ identifies over- or under-representation within individual Census tracts, while the FLQ evaluates whether those tracts are part of a broader surrounding concentration. The results show that Asian population concentration in Queens is not limited to isolated high-value tracts but forms a larger spatially connected pattern."
+  },
+  {
+    "objectID": "nyc-lq-flq.html#comparing-the-statistical-distributions",
+    "href": "nyc-lq-flq.html#comparing-the-statistical-distributions",
+    "title": "Spatial Analysis of Asian Population Concentration in NYC",
+    "section": "Comparing the Statistical Distributions",
+    "text": "Comparing the Statistical Distributions\n\nLocation Quotient Distribution\n\n\n\n\n\nThe LQ distribution is strongly right-skewed. Most Census tracts have relatively low LQ values, while a smaller number of tracts have very high levels of Asian population concentration.\n\nMean: 1.03888\n\nMedian: 0.54887\n\nStandard deviation: 1.20147\n\nThe mean is substantially higher than the median because a limited number of very high-LQ tracts pull the average upward.\n\n\nFocal Location Quotient Distribution\n\n\n\n\n\nThe FLQ distribution remains right-skewed, but it is less dispersed than the LQ distribution.\n\nMean: 1.04899\n\nMedian: 0.67848\n\nStandard deviation: 1.01407\n\nCompared with the traditional LQ, the FLQ has a higher median and a lower standard deviation. This indicates that incorporating nearby tracts raised some lower values while reducing some extreme tract-level differences.\n\n\nDistribution Comparison\n\n\n\nStatistic\nLQ\nFLQ\n\n\n\n\nMean\n1.03888\n1.04899\n\n\nMedian\n0.54887\n0.67848\n\n\nStandard deviation\n1.20147\n1.01407\n\n\n\nThe two measures have similar means, but the FLQ has a higher median and lower standard deviation. This supports the map-based interpretation that spatial weighting produces a smoother and more geographically contextual pattern without completely changing the overall distribution."
+  },
+  {
+    "objectID": "nyc-lq-flq.html#key-takeaway",
+    "href": "nyc-lq-flq.html#key-takeaway",
+    "title": "Spatial Analysis of Asian Population Concentration in NYC",
+    "section": "Key Takeaway",
+    "text": "Key Takeaway\nThe traditional Location Quotient identifies population concentration within individual Census tracts, while the Focal Location Quotient incorporates the influence of nearby tracts. Both measures identify Queens as the strongest area of Asian population concentration, with additional concentrations in parts of Brooklyn and Manhattan.\nThe FLQ produces a smoother and more spatially continuous pattern than the traditional LQ. Its higher median and lower standard deviation indicate that incorporating neighboring tracts reduces some extreme tract-level differences while preserving the broader geographic pattern. The results show that many high-concentration tracts are part of larger, spatially connected areas rather than isolated locations."
+  },
+  {
+    "objectID": "nyc-lq-flq.html#limitations",
+    "href": "nyc-lq-flq.html#limitations",
+    "title": "Spatial Analysis of Asian Population Concentration in NYC",
+    "section": "Limitations",
+    "text": "Limitations\nThe FLQ results depend on methodological choices, including the number of neighbors and the spatial weighting method. Using 16 nearest neighbors and inverse-distance weighting produces a locally smoothed pattern, but a different neighborhood definition could produce different results. Spatial smoothing may also reduce meaningful differences between individual Census tracts. Therefore, the LQ and FLQ are most useful when interpreted together rather than treating one measure as a replacement for the other."
+  },
+  {
+    "objectID": "nyc-lq-flq.html#tools-and-skills",
+    "href": "nyc-lq-flq.html#tools-and-skills",
+    "title": "Spatial Analysis of Asian Population Concentration in NYC",
+    "section": "Tools and Skills",
+    "text": "Tools and Skills\nTools: ArcGIS Pro, American Community Survey data\nSpatial methods: Location Quotient, Focal Location Quotient, 16-nearest-neighbor analysis, inverse-distance weighting, distance decay\nAnalytical skills: Spatial data preparation, demographic analysis, choropleth mapping, descriptive statistics, histogram interpretation, and comparative spatial analysis"
+  },
+  {
+    "objectID": "Remote-sensing-project.html#abstract",
+    "href": "Remote-sensing-project.html#abstract",
+    "title": "Remote Sensing Project",
+    "section": "Abstract",
+    "text": "Abstract\nPoyang Lake, China’s largest freshwater lake, has experienced major hydrological and environmental changes over the past several decades due to climate variability, seasonal flooding and drought cycles, anthropological activities, and large-scale hydrological modifications such as the operation of the Three Gorges Dam. The lake experiences extreme seasonal fluctuations in water extent.The water coverage expands during wet summer months and shrinks drastically during dry periods. Monitoring these long-term surface water changes is important for understanding ecological change, flood and drought vulnerability, wetland sustainability, and regional water resource management. This project investigates the spatial and temporal changes in the surface water extent of Poyang Lake between 1988 and 2023 using Landsat imagery and remote sensing techniques.Results showed fluctuations in lake extent, with maximum water coverage observed in 2014 and an overall decline of approximately 495 km² between 1988 and 2023.\nPrevious studies have shown that droughts, flooding events, sand mining, sediment changes, and hydrological regulation have altered the lake’s morphology and ecological conditions over time. The findings of this project contribute to a better understanding of long-term lake dynamics and demonstrate the effectiveness of remote sensing techniques for monitoring environmental change in large lake systems."
+  },
+  {
+    "objectID": "Remote-sensing-project.html#introduction",
+    "href": "Remote-sensing-project.html#introduction",
+    "title": "Remote Sensing Project",
+    "section": "Introduction",
+    "text": "Introduction\nPoyang Lake, located in Jiangxi Province in southeastern China, is the largest freshwater lake in China and one of the most ecologically significant wetland systems in East Asia. This lake plays an important role in regional hydrology, biodiversity conservation, flood regulation, water storage, fisheries and agriculture. It is connected to the Yangtze River and receives inflow from five major tributaries, creating a complex and dynamic hydrological system. Unlike many permanent lakes, Poyang Lake experiences dramatic seasonal fluctuations in water level and surface area throughout the year. During the summer monsoon season, increased precipitation and river inflow expand the lake area significantly, while during winter and drought periods, the lake shrinks and exposes large wetland and floodplain areas. Studies have shown that the water extent of Poyang Lake can fluctuate by several thousand square kilometers between wet and dry seasons. These variations are important indicators of environmental change and directly affect wetland ecosystems, migratory bird habitats, agriculture, fisheries, and surrounding human settlements. In recent decades, Poyang Lake has experienced increasing environmental stress by both natural and anthropogenic factors. The extreme drought event of 2022 reduced the lake area and water levels, which exposed large portions of the lakebed and raised concerns about ecosystem degradation and water security. In addition, large-scale human activities such as sand mining, urbanization, agricultural intensification, and building the Three Gorges Dam have altered sediment transport, hydrological connectivity, and water dynamics within the lake system. Because of its large size and dynamic seasonal behavior, monitoring changes in Poyang Lake through traditional field-based methods is difficult and time consuming. Remote sensing provides an effective solution for long-term environmental monitoring by which we can repeatedly observe surface water changes over large geographical areas. Satellite imagery from the Landsat program has been widely used in hydrological and environmental studies because of its long temporal coverage, moderate spatial resolution, and accessibility. Water extraction techniques such as emissivity band, NDWI, and NDVI enable us to distinguish water surfaces from vegetation and other land cover types. The purpose of this study is to analyze the long-term spatial and temporal changes in the surface water extent of Poyang Lake between 1988 and 2023. Although previous studies have examined hydrological changes in Poyang Lake, fewer studies have focused specifically on emissivity-based thermal remote sensing approaches for long-term water extraction using multi-decadal Landsat Level-2 products. This project uses Landsat Level-2 emissivity data to classify water and non-water areas and quantify changes in lake area over time. By comparing five Landsat datasets between 1988 and 2023, this study evaluates long-term hydrological variability using emissivity-based binary water classification. The findings of this study contribute to a broader understanding of freshwater lake dynamics and highlight the value of remote sensing techniques in environmental monitoring."
+  },
+  {
+    "objectID": "Remote-sensing-project.html#study-area",
+    "href": "Remote-sensing-project.html#study-area",
+    "title": "Remote Sensing Project",
+    "section": "Study Area",
+    "text": "Study Area\nPoyang Lake is located in Jiangxi Province in southeastern China and is the largest freshwater lake in China. The lake lies along the southern bank of the middle reaches of the Yangtze River and forms an important part of the Yangtze River floodplain system. Geographically, Poyang Lake is situated approximately between 28°24′N–29°46′N latitude and 115°49′E–116°46′E longitude. The lake occupies a strategically important hydrological and ecological position within the Yangtze River Basin and serves as a major freshwater storage and flood regulation system in the region.\n\nPoyang Lake is a seasonal floodplain lake with highly dynamic hydrological behavior. The lake receives water primarily from five major tributaries: the Ganjiang River, Fuhe River, Xinjiang River, Raohe River, and Xiuhe River. These rivers discharge into the lake before the water eventually flows northward into the Yangtze River near Hukou County. The interaction between tributary inflow and the Yangtze River creates complex seasonal fluctuations in water level and surface area.\nThe surface area of Poyang Lake varies seasonally from less than 1,000 km² during dry periods to more than 3,000 km² during flood seasons. It has a subtropical humid monsoon climate which is hot, humid in summers and mild cold in winters. Annual precipitation generally ranges between 1350 mm and 2150 mm, with most rainfall between April and June during the East Asian monsoon season. Average annual temperatures are approximately 17–18°C. Seasonal rainfall and monsoon patterns strongly influence the hydrology of the lake, as a result of which the lake expands during wet periods and shrinks during the dry season.\nThe lake is internationally recognized for its ecological importance and is designated as a wetland of global significance under the Ramsar Convention. It supports biodiversity conservation, fisheries, agriculture, transportation, and freshwater supply for surrounding communities. The unique hydrological behavior, ecological importance, and increasing environmental stress make Poyang Lake an important study area for long-term remote sensing analysis and environmental monitoring."
+  },
+  {
+    "objectID": "Remote-sensing-project.html#data",
+    "href": "Remote-sensing-project.html#data",
+    "title": "Remote Sensing Project",
+    "section": "Data",
+    "text": "Data\n\nSatellite Data\nThis study uses Landsat imagery to analyze long-term changes in the surface water extent of Poyang Lake between 1988 and 2023. Landsat imagery was selected because of its long historical archive, moderate spatial resolution, and suitability for environmental monitoring and land cover analysis. All images were acquired as Landsat Level-2 products and were selected from similar seasonal periods to maintain consistency in hydrological conditions across years. The primary datasets used in this study included emissivity (EMIS) bands for water extraction and additional spectral indices such as NDWI and NDVI for visualization and interpretation of water and vegetation patterns.\n\n\n\n\n\n\n\n\n\n\n\nYear\nSatellite\nSensor\nSpatial Resolution\nAcquisition Month\nData Used\n\n\n\n\n1988\nLandsat 5\nTM\n30 m\nNov\nEMIS\n\n\n1996\nLandsat 5\nTM\n30 m\nNov\nEMIS\n\n\n2005\nLandsat 5\nTM\n30 m\nOct\nEMIS\n\n\n2014\nLandsat 8\nOLI/TIRS\n30 m\nOct\nEMIS\n\n\n2023\nLandsat 9\nOLI-2/TIRS-2\n30 m\nNov\nEMIS"
+  },
+  {
+    "objectID": "Remote-sensing-project.html#software-used",
+    "href": "Remote-sensing-project.html#software-used",
+    "title": "Remote Sensing Project",
+    "section": "Software Used",
+    "text": "Software Used\nSeveral geospatial and remote sensing software platforms were used during data processing, classification, mapping, and analysis.\n\n\n\n\n\n\n\nSoftware\nPurpose\n\n\nENVI 6.1\nImage processing, NDWI & NDVI maps, emissivity analysis, classification\n\n\nGoogle Earth\nValidation and visual interpretation\n\n\nRStudio\nStatistical graphs and trend visualization"
+  },
+  {
+    "objectID": "Remote-sensing-project.html#image-selection-and-data-preparation",
+    "href": "Remote-sensing-project.html#image-selection-and-data-preparation",
+    "title": "Remote Sensing Project",
+    "section": "Image Selection and Data Preparation",
+    "text": "Image Selection and Data Preparation\nMulti-temporal Landsat imagery was selected to analyze long-term changes in the surface water extent of Poyang Lake between 1988 and 2023. Images from 1988, 1996, 2005, 2014, and 2023 were chosen to represent changes over approximately three decades. To maintain seasonal consistency and reduce variability caused by short-term hydrological fluctuations, images were selected from October to December periods with low cloud cover.\nAll imagery used in this study consisted of Landsat Level-2 products. The images were imported in ENVI 6.1 for preprocessing and analysis. A consistent Area of Interest (AOI) covering Poyang Lake was selected and applied to all years using the subset tool. Creating a common subset ensured that the same geographic extent was analyzed across all datasets for direct comparison of water extent."
+  },
+  {
+    "objectID": "Remote-sensing-project.html#emissivity-based-water-extraction",
+    "href": "Remote-sensing-project.html#emissivity-based-water-extraction",
+    "title": "Remote Sensing Project",
+    "section": "Emissivity-Based Water Extraction",
+    "text": "Emissivity-Based Water Extraction\nThe primary method used for water extraction in this study was emissivity-based classification. Emissivity is the efficiency with which a surface emits thermal energy relative to a perfect blackbody. In remote sensing, water surfaces generally exhibit high emissivity values compared to surrounding land surfaces, vegetation, and built-up areas. Because of this distinct thermal behavior, the emissivity band was effective in separating water bodies from non-water regions within the imagery.\nThe emissivity (EMIS) band from the Landsat Level-2 datasets was used to identify water surfaces. Water and non-water areas were separated and classified in two classes. Binary classification maps of two classes — water and non-water — were generated for each selected year.\nThis approach was selected because the emissivity band provided clear contrast between open water and surrounding land cover, particularly in wetland and floodplain environments where spectral confusion can occur using visible bands alone."
+  },
+  {
+    "objectID": "Remote-sensing-project.html#ndwi-and-ndvi-maps",
+    "href": "Remote-sensing-project.html#ndwi-and-ndvi-maps",
+    "title": "Remote Sensing Project",
+    "section": "NDWI and NDVI Maps",
+    "text": "NDWI and NDVI Maps\nIn addition to emissivity-based classification, the Normalized Difference Water Index (NDWI) and Normalized Difference Vegetation Index (NDVI) were generated to confirm the interpretation of water and vegetation patterns.\nThe NDWI was used to enhance and visualize water bodies by utilizing differences between green and near-infrared reflectance values. It was calculated using green and near-infrared reflectance values as follows: \n\n\n\n\n\nAreas with positive NDWI values generally represented water surfaces, while negative values corresponded to non-water features such as vegetation and soil.\nThe NDVI was generated to highlight vegetation distribution and differentiate vegetated surfaces from water bodies. It was calculated to identify vegetated surfaces using the following relationship: \n\n\n\n\n\nVegetation areas typically showed positive NDVI values, while water surfaces generally displayed values below zero.\nThese indices were primarily used for visualization and interpretation purposes and helped support the classification results."
+  },
+  {
+    "objectID": "Remote-sensing-project.html#classification-and-water-area-mapping",
+    "href": "Remote-sensing-project.html#classification-and-water-area-mapping",
+    "title": "Remote Sensing Project",
+    "section": "Classification and Water Area Mapping",
+    "text": "Classification and Water Area Mapping\nFor each selected year, classified maps were generated containing two classes:\n\nWater\nNon-water\n\nThe classification process focused specifically on identifying changes in water extent rather than producing a detailed multi-class land cover map. Threshold values were adjusted based on image characteristics to improve separation between water and surrounding surfaces.\nFollowing classification, water and non-water pixels were counted for each year. The total water-covered area was calculated by multiplying the number of classified water pixels by the spatial resolution of the imagery. Area values were then converted into square kilometers to allow temporal comparison across years."
+  },
+  {
+    "objectID": "Remote-sensing-project.html#why-emissivity-band",
+    "href": "Remote-sensing-project.html#why-emissivity-band",
+    "title": "Remote Sensing Project",
+    "section": "Why Emissivity Band? ",
+    "text": "Why Emissivity Band? \nEmissivity is a fundamental concept in thermal remote sensing that describes how efficiently a surface emits thermal infrared radiation relative to a perfect blackbody. Emissivity values range between 0 and 1, with values closer to 1 representing highly efficient emitters of thermal energy. Unlike optical remote sensing, which relies on reflected solar radiation, thermal remote sensing measures emitted radiation from surface materials.\nAccording to Planck’s Law, all objects above absolute zero emit thermal radiation, and emissivity influences the efficiency with which this energy is emitted from natural surfaces. Different materials exhibit distinct emissivity characteristics depending on their surface composition, moisture content, and physical properties.\nWater generally exhibits very high emissivity values in the thermal infrared region, often close to 0.99, compared to surrounding land surfaces such as soil, rocks, and built-up areas. Because water absorbs most incoming radiation and reflects relatively little, it appears thermally very different in emissivity imagery. This property makes emissivity very useful for separating water from non-water surfaces in remote sensing analysis.\nIn this study, the Landsat Level-2 emissivity (EMIS) band was used to identify and classify water surfaces in Lake Poyang. The emissivity band provided strong contrast between water and surrounding land cover, which improved the consistency of water extraction across multiple years. This approach was especially useful in the Lake Poyang wetland environment, where shallow water zones, flooded vegetation, and wet agricultural areas may create spectral confusion in visible-band imagery.\nThe emissivity-based approach demonstrated that thermal remote sensing can be an effective method for monitoring long-term hydrological change and surface water dynamics in large freshwater lake systems.\n\n\n\n\n\nThe figure shows a comparison between optical and thermal remote sensing. It shows reflected solar radiation and emitted thermal infrared energy from Earth’s surface."
   },
   {
     "objectID": "ges_668/index.html",
@@ -98,73 +210,24 @@
     "text": "10 References\n\nAn introduction to tidycensus\n311 Customer Service Requests 2022\nArcgislayers Package\nMedian Household Income\nAre High-Immigrant Neighborhoods Disadvantaged in Seeking Local Government Services? Evidence from Baltimore City, Maryland\nStructure of 311 service requests as a signature of urban location\nEquity in 311 Reporting: Understanding Socio-Spatial Differentials in the Propensity to Complain\nUnequal Responsiveness in City Service Delivery: Evidence from 42 Million 311 Calls\nUS Census Bureau Website"
   },
   {
-    "objectID": "Remote-sensing-project.html#abstract",
-    "href": "Remote-sensing-project.html#abstract",
-    "title": "Remote Sensing Project",
-    "section": "Abstract",
-    "text": "Abstract\nPoyang Lake, China’s largest freshwater lake, has experienced major hydrological and environmental changes over the past several decades due to climate variability, seasonal flooding and drought cycles, anthropological activities, and large-scale hydrological modifications such as the operation of the Three Gorges Dam. The lake experiences extreme seasonal fluctuations in water extent.The water coverage expands during wet summer months and shrinks drastically during dry periods. Monitoring these long-term surface water changes is important for understanding ecological change, flood and drought vulnerability, wetland sustainability, and regional water resource management. This project investigates the spatial and temporal changes in the surface water extent of Poyang Lake between 1988 and 2023 using Landsat imagery and remote sensing techniques.Results showed fluctuations in lake extent, with maximum water coverage observed in 2014 and an overall decline of approximately 495 km² between 1988 and 2023.\nPrevious studies have shown that droughts, flooding events, sand mining, sediment changes, and hydrological regulation have altered the lake’s morphology and ecological conditions over time. The findings of this project contribute to a better understanding of long-term lake dynamics and demonstrate the effectiveness of remote sensing techniques for monitoring environmental change in large lake systems."
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Drishti Gandhi",
+    "section": "",
+    "text": "Graduate Student in GIS\nUniversity of Maryland, Baltimore County\nI’m passionate about spatial analysis, remote sensing, and using maps to understand real-world problems. Currently building projects in GIS, data visualization, and environmental analysis."
   },
   {
-    "objectID": "Remote-sensing-project.html#introduction",
-    "href": "Remote-sensing-project.html#introduction",
-    "title": "Remote Sensing Project",
-    "section": "Introduction",
-    "text": "Introduction\nPoyang Lake, located in Jiangxi Province in southeastern China, is the largest freshwater lake in China and one of the most ecologically significant wetland systems in East Asia. This lake plays an important role in regional hydrology, biodiversity conservation, flood regulation, water storage, fisheries and agriculture. It is connected to the Yangtze River and receives inflow from five major tributaries, creating a complex and dynamic hydrological system. Unlike many permanent lakes, Poyang Lake experiences dramatic seasonal fluctuations in water level and surface area throughout the year. During the summer monsoon season, increased precipitation and river inflow expand the lake area significantly, while during winter and drought periods, the lake shrinks and exposes large wetland and floodplain areas. Studies have shown that the water extent of Poyang Lake can fluctuate by several thousand square kilometers between wet and dry seasons. These variations are important indicators of environmental change and directly affect wetland ecosystems, migratory bird habitats, agriculture, fisheries, and surrounding human settlements. In recent decades, Poyang Lake has experienced increasing environmental stress by both natural and anthropogenic factors. The extreme drought event of 2022 reduced the lake area and water levels, which exposed large portions of the lakebed and raised concerns about ecosystem degradation and water security. In addition, large-scale human activities such as sand mining, urbanization, agricultural intensification, and building the Three Gorges Dam have altered sediment transport, hydrological connectivity, and water dynamics within the lake system. Because of its large size and dynamic seasonal behavior, monitoring changes in Poyang Lake through traditional field-based methods is difficult and time consuming. Remote sensing provides an effective solution for long-term environmental monitoring by which we can repeatedly observe surface water changes over large geographical areas. Satellite imagery from the Landsat program has been widely used in hydrological and environmental studies because of its long temporal coverage, moderate spatial resolution, and accessibility. Water extraction techniques such as emissivity band, NDWI, and NDVI enable us to distinguish water surfaces from vegetation and other land cover types. The purpose of this study is to analyze the long-term spatial and temporal changes in the surface water extent of Poyang Lake between 1988 and 2023. Although previous studies have examined hydrological changes in Poyang Lake, fewer studies have focused specifically on emissivity-based thermal remote sensing approaches for long-term water extraction using multi-decadal Landsat Level-2 products. This project uses Landsat Level-2 emissivity data to classify water and non-water areas and quantify changes in lake area over time. By comparing five Landsat datasets between 1988 and 2023, this study evaluates long-term hydrological variability using emissivity-based binary water classification. The findings of this study contribute to a broader understanding of freshwater lake dynamics and highlight the value of remote sensing techniques in environmental monitoring."
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Drishti Gandhi",
+    "section": "",
+    "text": "GIS student; aspiring geographer; interested in remote sensing, spatial data, spatial statistics, and human geography.\n📍 Baltimore, Maryland"
   },
   {
-    "objectID": "Remote-sensing-project.html#study-area",
-    "href": "Remote-sensing-project.html#study-area",
-    "title": "Remote Sensing Project",
-    "section": "Study Area",
-    "text": "Study Area\nPoyang Lake is located in Jiangxi Province in southeastern China and is the largest freshwater lake in China. The lake lies along the southern bank of the middle reaches of the Yangtze River and forms an important part of the Yangtze River floodplain system. Geographically, Poyang Lake is situated approximately between 28°24′N–29°46′N latitude and 115°49′E–116°46′E longitude. The lake occupies a strategically important hydrological and ecological position within the Yangtze River Basin and serves as a major freshwater storage and flood regulation system in the region.\n\nPoyang Lake is a seasonal floodplain lake with highly dynamic hydrological behavior. The lake receives water primarily from five major tributaries: the Ganjiang River, Fuhe River, Xinjiang River, Raohe River, and Xiuhe River. These rivers discharge into the lake before the water eventually flows northward into the Yangtze River near Hukou County. The interaction between tributary inflow and the Yangtze River creates complex seasonal fluctuations in water level and surface area.\nThe surface area of Poyang Lake varies seasonally from less than 1,000 km² during dry periods to more than 3,000 km² during flood seasons. It has a subtropical humid monsoon climate which is hot, humid in summers and mild cold in winters. Annual precipitation generally ranges between 1350 mm and 2150 mm, with most rainfall between April and June during the East Asian monsoon season. Average annual temperatures are approximately 17–18°C. Seasonal rainfall and monsoon patterns strongly influence the hydrology of the lake, as a result of which the lake expands during wet periods and shrinks during the dry season.\nThe lake is internationally recognized for its ecological importance and is designated as a wetland of global significance under the Ramsar Convention. It supports biodiversity conservation, fisheries, agriculture, transportation, and freshwater supply for surrounding communities. The unique hydrological behavior, ecological importance, and increasing environmental stress make Poyang Lake an important study area for long-term remote sensing analysis and environmental monitoring."
-  },
-  {
-    "objectID": "Remote-sensing-project.html#data",
-    "href": "Remote-sensing-project.html#data",
-    "title": "Remote Sensing Project",
-    "section": "Data",
-    "text": "Data\n\nSatellite Data\nThis study uses Landsat imagery to analyze long-term changes in the surface water extent of Poyang Lake between 1988 and 2023. Landsat imagery was selected because of its long historical archive, moderate spatial resolution, and suitability for environmental monitoring and land cover analysis. All images were acquired as Landsat Level-2 products and were selected from similar seasonal periods to maintain consistency in hydrological conditions across years. The primary datasets used in this study included emissivity (EMIS) bands for water extraction and additional spectral indices such as NDWI and NDVI for visualization and interpretation of water and vegetation patterns.\n\n\n\n\n\n\n\n\n\n\n\nYear\nSatellite\nSensor\nSpatial Resolution\nAcquisition Month\nData Used\n\n\n\n\n1988\nLandsat 5\nTM\n30 m\nNov\nEMIS\n\n\n1996\nLandsat 5\nTM\n30 m\nNov\nEMIS\n\n\n2005\nLandsat 5\nTM\n30 m\nOct\nEMIS\n\n\n2014\nLandsat 8\nOLI/TIRS\n30 m\nOct\nEMIS\n\n\n2023\nLandsat 9\nOLI-2/TIRS-2\n30 m\nNov\nEMIS"
-  },
-  {
-    "objectID": "Remote-sensing-project.html#software-used",
-    "href": "Remote-sensing-project.html#software-used",
-    "title": "Remote Sensing Project",
-    "section": "Software Used",
-    "text": "Software Used\nSeveral geospatial and remote sensing software platforms were used during data processing, classification, mapping, and analysis.\n\n\n\n\n\n\n\nSoftware\nPurpose\n\n\nENVI 6.1\nImage processing, NDWI & NDVI maps, emissivity analysis, classification\n\n\nGoogle Earth\nValidation and visual interpretation\n\n\nRStudio\nStatistical graphs and trend visualization"
-  },
-  {
-    "objectID": "Remote-sensing-project.html#image-selection-and-data-preparation",
-    "href": "Remote-sensing-project.html#image-selection-and-data-preparation",
-    "title": "Remote Sensing Project",
-    "section": "Image Selection and Data Preparation",
-    "text": "Image Selection and Data Preparation\nMulti-temporal Landsat imagery was selected to analyze long-term changes in the surface water extent of Poyang Lake between 1988 and 2023. Images from 1988, 1996, 2005, 2014, and 2023 were chosen to represent changes over approximately three decades. To maintain seasonal consistency and reduce variability caused by short-term hydrological fluctuations, images were selected from October to December periods with low cloud cover.\nAll imagery used in this study consisted of Landsat Level-2 products. The images were imported in ENVI 6.1 for preprocessing and analysis. A consistent Area of Interest (AOI) covering Poyang Lake was selected and applied to all years using the subset tool. Creating a common subset ensured that the same geographic extent was analyzed across all datasets for direct comparison of water extent."
-  },
-  {
-    "objectID": "Remote-sensing-project.html#emissivity-based-water-extraction",
-    "href": "Remote-sensing-project.html#emissivity-based-water-extraction",
-    "title": "Remote Sensing Project",
-    "section": "Emissivity-Based Water Extraction",
-    "text": "Emissivity-Based Water Extraction\nThe primary method used for water extraction in this study was emissivity-based classification. Emissivity is the efficiency with which a surface emits thermal energy relative to a perfect blackbody. In remote sensing, water surfaces generally exhibit high emissivity values compared to surrounding land surfaces, vegetation, and built-up areas. Because of this distinct thermal behavior, the emissivity band was effective in separating water bodies from non-water regions within the imagery.\nThe emissivity (EMIS) band from the Landsat Level-2 datasets was used to identify water surfaces. Water and non-water areas were separated and classified in two classes. Binary classification maps of two classes — water and non-water — were generated for each selected year.\nThis approach was selected because the emissivity band provided clear contrast between open water and surrounding land cover, particularly in wetland and floodplain environments where spectral confusion can occur using visible bands alone."
-  },
-  {
-    "objectID": "Remote-sensing-project.html#ndwi-and-ndvi-maps",
-    "href": "Remote-sensing-project.html#ndwi-and-ndvi-maps",
-    "title": "Remote Sensing Project",
-    "section": "NDWI and NDVI Maps",
-    "text": "NDWI and NDVI Maps\nIn addition to emissivity-based classification, the Normalized Difference Water Index (NDWI) and Normalized Difference Vegetation Index (NDVI) were generated to confirm the interpretation of water and vegetation patterns.\nThe NDWI was used to enhance and visualize water bodies by utilizing differences between green and near-infrared reflectance values. It was calculated using green and near-infrared reflectance values as follows: \n\n\n\n\n\nAreas with positive NDWI values generally represented water surfaces, while negative values corresponded to non-water features such as vegetation and soil.\nThe NDVI was generated to highlight vegetation distribution and differentiate vegetated surfaces from water bodies. It was calculated to identify vegetated surfaces using the following relationship: \n\n\n\n\n\nVegetation areas typically showed positive NDVI values, while water surfaces generally displayed values below zero.\nThese indices were primarily used for visualization and interpretation purposes and helped support the classification results."
-  },
-  {
-    "objectID": "Remote-sensing-project.html#classification-and-water-area-mapping",
-    "href": "Remote-sensing-project.html#classification-and-water-area-mapping",
-    "title": "Remote Sensing Project",
-    "section": "Classification and Water Area Mapping",
-    "text": "Classification and Water Area Mapping\nFor each selected year, classified maps were generated containing two classes:\n\nWater\nNon-water\n\nThe classification process focused specifically on identifying changes in water extent rather than producing a detailed multi-class land cover map. Threshold values were adjusted based on image characteristics to improve separation between water and surrounding surfaces.\nFollowing classification, water and non-water pixels were counted for each year. The total water-covered area was calculated by multiplying the number of classified water pixels by the spatial resolution of the imagery. Area values were then converted into square kilometers to allow temporal comparison across years."
-  },
-  {
-    "objectID": "Remote-sensing-project.html#why-emissivity-band",
-    "href": "Remote-sensing-project.html#why-emissivity-band",
-    "title": "Remote Sensing Project",
-    "section": "Why Emissivity Band? ",
-    "text": "Why Emissivity Band? \nEmissivity is a fundamental concept in thermal remote sensing that describes how efficiently a surface emits thermal infrared radiation relative to a perfect blackbody. Emissivity values range between 0 and 1, with values closer to 1 representing highly efficient emitters of thermal energy. Unlike optical remote sensing, which relies on reflected solar radiation, thermal remote sensing measures emitted radiation from surface materials.\nAccording to Planck’s Law, all objects above absolute zero emit thermal radiation, and emissivity influences the efficiency with which this energy is emitted from natural surfaces. Different materials exhibit distinct emissivity characteristics depending on their surface composition, moisture content, and physical properties.\nWater generally exhibits very high emissivity values in the thermal infrared region, often close to 0.99, compared to surrounding land surfaces such as soil, rocks, and built-up areas. Because water absorbs most incoming radiation and reflects relatively little, it appears thermally very different in emissivity imagery. This property makes emissivity very useful for separating water from non-water surfaces in remote sensing analysis.\nIn this study, the Landsat Level-2 emissivity (EMIS) band was used to identify and classify water surfaces in Lake Poyang. The emissivity band provided strong contrast between water and surrounding land cover, which improved the consistency of water extraction across multiple years. This approach was especially useful in the Lake Poyang wetland environment, where shallow water zones, flooded vegetation, and wet agricultural areas may create spectral confusion in visible-band imagery.\nThe emissivity-based approach demonstrated that thermal remote sensing can be an effective method for monitoring long-term hydrological change and surface water dynamics in large freshwater lake systems.\n\n\n\n\n\nThe figure shows a comparison between optical and thermal remote sensing. It shows reflected solar radiation and emitted thermal infrared energy from Earth’s surface."
+    "objectID": "index.html#portfolio",
+    "href": "index.html#portfolio",
+    "title": "Drishti Gandhi",
+    "section": "PORTFOLIO",
+    "text": "PORTFOLIO\n\n\nSpatial Databases and Reproducible Mapping in R\nUMBC SPATIAL DATABASES R\nThis project uses R, Quarto, and spatial data workflows to map and analyze Baltimore 311 service requests in relation to community-level patterns.\n\n\n\n\n\n\n\nRemote Sensing Project\nUMBC REMOTE SENSING ENVI\nThis project uses satellite imagery and remote sensing methods to analyze land cover, vegetation, snow, wildfire, and surface temperature patterns.\n\n\n\n\n\n\nOn this page\nPortfolio\n\n\nCategories\nhuman geography\npersonal\nremote sensing\ntransportation\numbc"
   }
 ]

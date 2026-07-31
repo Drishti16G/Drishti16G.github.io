@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>about – Drishti Gandhi</title>
+<title>Spatial Analysis of Asian Population Concentration in NYC – Drishti Gandhi</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -40,6 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -77,7 +78,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -99,7 +100,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">about drishti</span></a>
   </li>  
 </ul>
@@ -120,29 +121,200 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#project-overview" id="toc-project-overview" class="nav-link active" data-scroll-target="#project-overview">Project Overview</a></li>
+  <li><a href="#research-question" id="toc-research-question" class="nav-link" data-scroll-target="#research-question">Research Question</a></li>
+  <li><a href="#data-and-methods" id="toc-data-and-methods" class="nav-link" data-scroll-target="#data-and-methods">Data and Methods</a>
+  <ul class="collapse">
+  <li><a href="#location-quotient" id="toc-location-quotient" class="nav-link" data-scroll-target="#location-quotient">Location Quotient</a></li>
+  <li><a href="#focal-location-quotient" id="toc-focal-location-quotient" class="nav-link" data-scroll-target="#focal-location-quotient">Focal Location Quotient</a></li>
+  </ul></li>
+  <li><a href="#comparing-the-lq-and-flq-maps" id="toc-comparing-the-lq-and-flq-maps" class="nav-link" data-scroll-target="#comparing-the-lq-and-flq-maps">Comparing the LQ and FLQ Maps</a>
+  <ul class="collapse">
+  <li><a href="#traditional-location-quotient" id="toc-traditional-location-quotient" class="nav-link" data-scroll-target="#traditional-location-quotient">Traditional Location Quotient</a></li>
+  <li><a href="#focal-location-quotient-1" id="toc-focal-location-quotient-1" class="nav-link" data-scroll-target="#focal-location-quotient-1">Focal Location Quotient</a></li>
+  <li><a href="#main-comparison" id="toc-main-comparison" class="nav-link" data-scroll-target="#main-comparison">Main Comparison</a></li>
+  </ul></li>
+  <li><a href="#comparing-the-statistical-distributions" id="toc-comparing-the-statistical-distributions" class="nav-link" data-scroll-target="#comparing-the-statistical-distributions">Comparing the Statistical Distributions</a>
+  <ul class="collapse">
+  <li><a href="#location-quotient-distribution" id="toc-location-quotient-distribution" class="nav-link" data-scroll-target="#location-quotient-distribution">Location Quotient Distribution</a></li>
+  <li><a href="#focal-location-quotient-distribution" id="toc-focal-location-quotient-distribution" class="nav-link" data-scroll-target="#focal-location-quotient-distribution">Focal Location Quotient Distribution</a></li>
+  <li><a href="#distribution-comparison" id="toc-distribution-comparison" class="nav-link" data-scroll-target="#distribution-comparison">Distribution Comparison</a></li>
+  </ul></li>
+  <li><a href="#key-takeaway" id="toc-key-takeaway" class="nav-link" data-scroll-target="#key-takeaway">Key Takeaway</a></li>
+  <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations">Limitations</a></li>
+  <li><a href="#tools-and-skills" id="toc-tools-and-skills" class="nav-link" data-scroll-target="#tools-and-skills">Tools and Skills</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<div class="quarto-about-jolla">
-  <img src="images/ProfilePic/image3.png" class="about-image
-  round " style="height: 15em; width: 15em;">
- <header id="title-block-header" class="quarto-title-block"></header><main class="content" id="quarto-document-content">
-<p><em>Graduate Student in GIS</em></p>
-<p><a href="https://professionalprograms.umbc.edu/geographic-information-systems/masters-of-professional-studies-geographic-information-systems/">University of Maryland, Baltimore County</a></p>
-<p>I’m passionate about spatial analysis, remote sensing, and using maps to understand real-world problems. Currently building projects in GIS, data visualization, and environmental analysis.</p>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Spatial Analysis of Asian Population Concentration in NYC</h1>
+<p class="subtitle lead">Using Location Quotient and Focal Location Quotient by Census Tract</p>
+</div>
 
 
-</main> 
-  <hr class="about-sep">
-   <div class="about-links">
-  <a href="https://github.com/Drishti16G" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
-  </a>
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="project-overview" class="level2">
+<h2 class="anchored" data-anchor-id="project-overview">Project Overview</h2>
+<p>This project examines the geographic concentration of New York City’s Asian population across Census tracts by comparing the traditional Location Quotient (LQ) with the spatially weighted Focal Location Quotient (FLQ). While the LQ measures concentration within individual Census tracts, the FLQ incorporates the influence of nearby tracts using inverse-distance weighting. Comparing the two measures shows how including surrounding geographic context changes the interpretation of population concentration.</p>
+</section>
+<section id="research-question" class="level2">
+<h2 class="anchored" data-anchor-id="research-question">Research Question</h2>
+<p>How does the geographic pattern of Asian population concentration change when neighboring Census tracts are incorporated into the Location Quotient calculation?</p>
+</section>
+<section id="data-and-methods" class="level2">
+<h2 class="anchored" data-anchor-id="data-and-methods">Data and Methods</h2>
+<p>The analysis used American Community Survey data for New York City Census tracts, including total population and Asian population counts. The traditional Location Quotient was calculated for each tract by comparing its share of the Asian population with the Asian population share of New York City overall.</p>
+<p>To incorporate surrounding geographic context, tract centroids were created and the 16 nearest neighboring tracts were identified for each focal tract. Inverse-distance weights were applied so that nearby tracts had greater influence than more distant tracts. The weighted population values were then used to calculate the Focal Location Quotient.</p>
+<section id="location-quotient" class="level3">
+<h3 class="anchored" data-anchor-id="location-quotient">Location Quotient</h3>
+<p>A Location Quotient greater than 1 indicates that the Asian population is over-represented in a Census tract compared with the citywide proportion. A value below 1 indicates under-representation.</p>
+</section>
+<section id="focal-location-quotient" class="level3">
+<h3 class="anchored" data-anchor-id="focal-location-quotient">Focal Location Quotient</h3>
+<p>The Focal Location Quotient incorporates the surrounding population pattern rather than evaluating each tract independently. It helps determine whether an individual tract is part of a broader geographic area of concentration.</p>
+</section>
+</section>
+<section id="comparing-the-lq-and-flq-maps" class="level2">
+<h2 class="anchored" data-anchor-id="comparing-the-lq-and-flq-maps">Comparing the LQ and FLQ Maps</h2>
+<section id="traditional-location-quotient" class="level3">
+<h3 class="anchored" data-anchor-id="traditional-location-quotient">Traditional Location Quotient</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/nyc-lq-flq-maps/lq-map.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
+</figure>
 </div>
+<p>The LQ map shows an uneven pattern of Asian population concentration across New York City. The strongest concentration appears in Queens, where many Census tracts have values above 1 and several fall within the highest LQ classes. Additional concentrations appear in western and southwestern Brooklyn, while much of the Bronx and Staten Island has lower values.</p>
+</section>
+<section id="focal-location-quotient-1" class="level3">
+<h3 class="anchored" data-anchor-id="focal-location-quotient-1">Focal Location Quotient</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/nyc-lq-flq-maps/flq-map.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
+</figure>
 </div>
- <!-- /main -->
+<p>The FLQ map preserves the same broad geographic pattern but produces a smoother and more spatially continuous result. Queens remains the strongest concentration area, while the pattern in Brooklyn also becomes more generalized. This indicates that many high-concentration tracts are reinforced by similar values in nearby Census tracts rather than occurring as isolated locations.</p>
+</section>
+<section id="main-comparison" class="level3">
+<h3 class="anchored" data-anchor-id="main-comparison">Main Comparison</h3>
+<p>The LQ identifies over- or under-representation within individual Census tracts, while the FLQ evaluates whether those tracts are part of a broader surrounding concentration. The results show that Asian population concentration in Queens is not limited to isolated high-value tracts but forms a larger spatially connected pattern.</p>
+</section>
+</section>
+<section id="comparing-the-statistical-distributions" class="level2">
+<h2 class="anchored" data-anchor-id="comparing-the-statistical-distributions">Comparing the Statistical Distributions</h2>
+<section id="location-quotient-distribution" class="level3">
+<h3 class="anchored" data-anchor-id="location-quotient-distribution">Location Quotient Distribution</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/nyc-lq-flq-maps/lq-histogram.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+<p>The LQ distribution is strongly right-skewed. Most Census tracts have relatively low LQ values, while a smaller number of tracts have very high levels of Asian population concentration.</p>
+<ul>
+<li><strong>Mean:</strong> 1.03888<br>
+</li>
+<li><strong>Median:</strong> 0.54887<br>
+</li>
+<li><strong>Standard deviation:</strong> 1.20147</li>
+</ul>
+<p>The mean is substantially higher than the median because a limited number of very high-LQ tracts pull the average upward.</p>
+</section>
+<section id="focal-location-quotient-distribution" class="level3">
+<h3 class="anchored" data-anchor-id="focal-location-quotient-distribution">Focal Location Quotient Distribution</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/nyc-lq-flq-maps/flq-histogram.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+<p>The FLQ distribution remains right-skewed, but it is less dispersed than the LQ distribution.</p>
+<ul>
+<li><strong>Mean:</strong> 1.04899<br>
+</li>
+<li><strong>Median:</strong> 0.67848<br>
+</li>
+<li><strong>Standard deviation:</strong> 1.01407</li>
+</ul>
+<p>Compared with the traditional LQ, the FLQ has a higher median and a lower standard deviation. This indicates that incorporating nearby tracts raised some lower values while reducing some extreme tract-level differences.</p>
+</section>
+<section id="distribution-comparison" class="level3">
+<h3 class="anchored" data-anchor-id="distribution-comparison">Distribution Comparison</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Statistic</th>
+<th style="text-align: right;">LQ</th>
+<th style="text-align: right;">FLQ</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Mean</td>
+<td style="text-align: right;">1.03888</td>
+<td style="text-align: right;">1.04899</td>
+</tr>
+<tr class="even">
+<td>Median</td>
+<td style="text-align: right;">0.54887</td>
+<td style="text-align: right;">0.67848</td>
+</tr>
+<tr class="odd">
+<td>Standard deviation</td>
+<td style="text-align: right;">1.20147</td>
+<td style="text-align: right;">1.01407</td>
+</tr>
+</tbody>
+</table>
+<p>The two measures have similar means, but the FLQ has a higher median and lower standard deviation. This supports the map-based interpretation that spatial weighting produces a smoother and more geographically contextual pattern without completely changing the overall distribution.</p>
+</section>
+</section>
+<section id="key-takeaway" class="level2">
+<h2 class="anchored" data-anchor-id="key-takeaway">Key Takeaway</h2>
+<p>The traditional Location Quotient identifies population concentration within individual Census tracts, while the Focal Location Quotient incorporates the influence of nearby tracts. Both measures identify Queens as the strongest area of Asian population concentration, with additional concentrations in parts of Brooklyn and Manhattan.</p>
+<p>The FLQ produces a smoother and more spatially continuous pattern than the traditional LQ. Its higher median and lower standard deviation indicate that incorporating neighboring tracts reduces some extreme tract-level differences while preserving the broader geographic pattern. The results show that many high-concentration tracts are part of larger, spatially connected areas rather than isolated locations.</p>
+</section>
+<section id="limitations" class="level2">
+<h2 class="anchored" data-anchor-id="limitations">Limitations</h2>
+<p>The FLQ results depend on methodological choices, including the number of neighbors and the spatial weighting method. Using 16 nearest neighbors and inverse-distance weighting produces a locally smoothed pattern, but a different neighborhood definition could produce different results. Spatial smoothing may also reduce meaningful differences between individual Census tracts. Therefore, the LQ and FLQ are most useful when interpreted together rather than treating one measure as a replacement for the other.</p>
+</section>
+<section id="tools-and-skills" class="level2">
+<h2 class="anchored" data-anchor-id="tools-and-skills">Tools and Skills</h2>
+<p><strong>Tools:</strong> ArcGIS Pro, American Community Survey data</p>
+<p><strong>Spatial methods:</strong> Location Quotient, Focal Location Quotient, 16-nearest-neighbor analysis, inverse-distance weighting, distance decay</p>
+<p><strong>Analytical skills:</strong> Spatial data preparation, demographic analysis, choropleth mapping, descriptive statistics, histogram interpretation, and comparative spatial analysis</p>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
