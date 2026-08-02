@@ -6,7 +6,7 @@ page-layout: article
 ::: {.intro}
 
 
-GIS student; aspiring geographer; interested in remote sensing, spatial data, spatial statistics, and human geography.
+GIS student; interested in remote sensing, spatial data, spatial statistics, and human geography.
 
 📍 Baltimore, Maryland
 
@@ -50,6 +50,26 @@ This project uses satellite imagery and remote sensing methods to analyze land c
 :::
 
 
+::: {.project}
+
+::: {.project-text}
+
+### [NYC Asian Population: LQ vs. FLQ](nyc-lq-flq.qmd)
+
+`UMBC` `SPATIAL STATISTICS` `ARCGIS PRO`
+
+This project compares traditional and spatially weighted Location Quotients to examine how neighboring Census tracts influence patterns of Asian population concentration across New York City.
+
+:::
+
+::: {.project-image}
+
+[![](images/nyc-lq-flq-maps/lq-map.png){.project-thumbnail fig-alt="Location Quotient map of Asian population concentration across New York City Census tracts"}](nyc-lq-flq.qmd)
+
+:::
+:::
+
+
 
 
 
@@ -64,7 +84,6 @@ Portfolio
 human geography  
 personal  
 remote sensing  
-transportation  
 umbc  
 
 :::
