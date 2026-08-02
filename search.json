@@ -221,13 +221,13 @@
     "href": "index.html",
     "title": "Drishti Gandhi",
     "section": "",
-    "text": "GIS student; aspiring geographer; interested in remote sensing, spatial data, spatial statistics, and human geography.\n📍 Baltimore, Maryland"
+    "text": "GIS student; interested in remote sensing, spatial data, spatial statistics, and human geography.\n📍 Baltimore, Maryland"
   },
   {
     "objectID": "index.html#portfolio",
     "href": "index.html#portfolio",
     "title": "Drishti Gandhi",
     "section": "PORTFOLIO",
-    "text": "PORTFOLIO\n\n\nSpatial Databases and Reproducible Mapping in R\nUMBC SPATIAL DATABASES R\nThis project uses R, Quarto, and spatial data workflows to map and analyze Baltimore 311 service requests in relation to community-level patterns.\n\n\n\n\n\n\n\nRemote Sensing Project\nUMBC REMOTE SENSING ENVI\nThis project uses satellite imagery and remote sensing methods to analyze land cover, vegetation, snow, wildfire, and surface temperature patterns.\n\n\n\n\n\n\nOn this page\nPortfolio\n\n\nCategories\nhuman geography\npersonal\nremote sensing\ntransportation\numbc"
+    "text": "PORTFOLIO\n\n\nSpatial Databases and Reproducible Mapping in R\nUMBC SPATIAL DATABASES R\nThis project uses R, Quarto, and spatial data workflows to map and analyze Baltimore 311 service requests in relation to community-level patterns.\n\n\n\n\n\n\n\nRemote Sensing Project\nUMBC REMOTE SENSING ENVI\nThis project uses satellite imagery and remote sensing methods to analyze land cover, vegetation, snow, wildfire, and surface temperature patterns.\n\n\n\n\n\n\nNYC Asian Population: LQ vs. FLQ\nUMBC SPATIAL STATISTICS ARCGIS PRO\nThis project compares traditional and spatially weighted Location Quotients to examine how neighboring Census tracts influence patterns of Asian population concentration across New York City.\n\n\n\n\n\n\n\nOn this page\nPortfolio\n\n\nCategories\nhuman geography\npersonal\nremote sensing\numbc"
   }
 ]
